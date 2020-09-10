@@ -294,3 +294,42 @@ header{
 }
 }
 
+/*slider*/
+.main {
+        height: 80vh;
+        width: 80%;
+        margin: auto;
+        animation: sliderX 10s infinite;
+
+    }
+
+    @keyframes sliderX {
+        0% {
+            background: url("images/1.jpg");
+        }
+        10% {
+            background: url("images/photo.jpg");
+        }
+
+        25% {
+            background: url("images/2.jpg");
+        }
+
+        26% {
+            background: url("images/3.jpg");
+        }
+
+        50% {
+            background: url("images/1.jpg");
+        }
+
+        51% {
+            background: url("images/photo.jpg");
+        }
+
+        100% {
+            background: url("images/2.jpg");
+        }
+
+    }
+/*slider*/
