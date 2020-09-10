@@ -1,0 +1,296 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/*header*/
+header span{
+	color: blue;
+
+}
+.left-header a{
+	text-decoration: none;
+}
+header{
+	display: flex;
+	height: 67px;
+	background: darkgray;
+}
+@media(max-width: 767px){
+	header{
+		display: block;
+	}
+}
+.left-header{
+	width: 40%;
+	display: flex;
+}
+.left-header h2{
+	font-size: 33px;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+@media(max-width: 767px){
+	.left-header{
+	width: 100%;
+	/*display: flex;*/
+}
+	.left-header h2{
+	font-size: 20px;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+}
+.left-header img{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+.right-header{
+	width: 50%;
+
+}
+@media(max-width: 768px){
+	.right-header{
+	width: 55%;
+
+}
+}
+
+.right-header ul li{
+	float: right;
+	margin:6px;
+	margin-top: 0;
+	display: flex;
+	line-height: 50px;
+	list-style-type: none;
+	/*border-bottom: 3px solid green;*/
+	/*background: #000;*/
+	padding: 7px 12px;
+
+}
+@media(max-width: 424px){
+	.right-header ul li{
+		padding: 3px 7px;
+	}
+}
+@media(max-width: 374px){
+	.right-header ul li{
+		padding: 1px 0px;
+	}
+}
+.right-header ul li a{
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+.right-header ul li:hover{
+	background: #fff;
+}
+
+@media(max-width: 767px){
+	.right-header{
+		/*margin-bottom: 10px;*/
+		background: lightgreen;
+		height: 60px;
+	width: 100%;
+
+}
+.right-header ul li{
+	float: left;
+	margin:10px;
+	display: flex;
+	line-height: 33px;
+	list-style-type: none;
+}
+.right-header ul li a{
+	color: #000;
+	font-size: 17px;
+	text-decoration: none;
+	text-align: center;
+}
+}
+@media(max-width: 767px){
+	header{
+		margin-bottom: 45px;
+	}
+}
+
+
+
+
+/*header*/
+.container{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.form-control{
+	border:none;
+	/*border-radius: 5px;*/
+	border-bottom: 1px solid #000;
+}
+.contact-media{
+	margin-top: 15px;
+	
+}
+.contact-media ul{
+	margin-top: 15px;
+	width: 100%;
+	display: flex;
+}
+.contact-media li{
+
+	margin:5px;
+	list-style-type: none;
+}
+.contact-media li a{
+	text-decoration: none;
+	text-align: center;
+}
+.gallery{
+	margin:10px;
+	width: 100%;
+	display: flex;
+}
+@media(max-width: 767px){
+	.gallery{
+		display: block;
+	}
+}
+
+.col-md-3{
+	width: 25%;
+
+}
+.col-md-3 img{
+	height: 300px;
+	width: 300px;
+}
+@media(max-width: 1024px){
+	.col-md-3 img{
+		height: 270px;
+		width: 223px;
+}
+}
+@media(max-width: 768px){
+	.col-md-3 img{
+		height: 150px;
+		width: 150px;
+}
+}
+@media(max-width: 767px){
+	.col-md-3 img{
+		height: 400px;
+		width: 355px;
+}
+}
+@media(max-width: 425px){
+	.col-md-3 img{
+		height: 300px;
+		width: 300px;
+}
+}
+@media(max-width: 320px){
+	.col-md-3 img{
+		height: 300px;
+		width: 250px;
+}
+}
+.work{
+	width: 100%;
+	display: flex;
+	margin:25px;
+	margin-right: 0px;
+}
+@media(max-width: 767px){
+	.work{
+
+		margin:0;
+		margin-bottom: 14px;
+		display: block;
+	}
+}
+@media(max-width: 767px){
+	.profile{
+	margin-bottom: 15px;
+}
+}
+.profile img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.profile-pic img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+@media(max-width: 767px){
+	.profile img{
+		height: 160px;
+		width: 163px;
+}
+}
+.profile-pic{
+	margin:15px;
+}
+.profile-pic img{
+	margin-left: 130px;
+}
+.description{
+	/*padding-right: 10px;*/
+	text-align: justify;
+	margin-left: 25px;
+	width: 75%;
+}
+@media(max-width: 767px){
+	.description{
+		width: 100%;
+		margin-left: 0px;
+		/*margin-right: 15px;*/
+	}
+}
+.bio{
+	width: 100%;
+	display: flex;
+}
+
+.center,.left,.right{
+	width: 33.33%;
+}
+@media(max-width: 768px){
+	.bio{
+		display:block;
+	}
+	.center,.left,.right{
+	width: 100%;
+}
+}
+@media(max-width: 1024px){
+	.profile-pic img{
+	margin-left: 50px;
+}
+}
+@media(max-width: 768px){
+	.profile-pic img{
+	margin-left: 249px;
+}
+}
+@media(max-width: 767px){
+	.profile-pic img{
+	margin-left: 74px;
+}
+}
+@media(max-width: 424px){
+	.profile-pic img{
+	margin-left: 45px;
+}
+}
+@media(max-width: 323px){
+	.profile-pic img{
+	margin-left: 24px;
+}
+}
+
