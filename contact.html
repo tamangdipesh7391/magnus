@@ -47,14 +47,24 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<br>
-		<form>
+		<form name="myForm" id="form" onsubmit="return validation();">
 			<h2>Send Message</h2>
+
 			<label><h4>Name</h4></label>
 			<input type="text" name="name" class="form-control"><br><br>
+			<div id="errorName"></div>
+
+
 			<label><h4>Email</h4></label>
-			<input type="email" name="enail" class="form-control"><br><br>
+			<input type="email" name="email" class="form-control"><br><br>
+			<p id="errorEmail"></p>
+
+
 			<label><h4>Message Here</h4></label><br>
-			<textarea cols="20" rows="10"></textarea>
+			<textarea cols="20" rows="10"  name="message"></textarea>
+			<p id="errorMessage"></p>
+
+			<button name="Submit" id="btn" value="Submit"  >Submit</button>
 		</form>
 
 		<div class="contact-media">
@@ -67,6 +77,67 @@
 		</div>
 
 	</div>
+	<footer>
+	<div class="left-footer">
+		<h3>Quick Links</h3>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+
+			<li><a href="work.html">Work</a></li>
+			<li><a href="about.html">About</a></li>
+
+			<li><a href="contact.html">Contact</a></li>
+
+		</ul>
+	</div>
+	<div class="right-footer">
+		<h3>Social Icons</h3>
+		<ul>
+			<li><a href=""><img src="images/photo.jpg"></a></li>
+			<li><a href=""><img src="images/photo.jpg"></a></li>
+			<li><a href=""><img src="images/photo.jpg"></a></li>
+
+			
+
+		</ul>
+	</div>
+
+</footer>
+	<script>
+		// document.forms.addEventListner("submit",function(event){
+		// 	event.preventDefault();
+		// 	validation();
+		// });
+		function validation(){
+			// document.forms.addEventListner("submit",function(e){
+			// 	e.preventDefault();
+			// })
+			// alert('hooo')
+			// preventDefault();
+			var name = document.forms['myForm']['name'].value;
+			var email = document.forms['myForm']['email'].value;
+			var message = document.forms['myForm']['message'].value;
+
+
+			if (name.length < 1) {
+				document.getElementById('errorName').innerText = "Name is required.";
+				document.getElementById('errorName').style.color = "red";
+			}
+
+			if (email.length < 1) {
+				document.getElementById('errorEmail').innerHTML = "Email is required.";
+				document.getElementById('errorEmail').style.color = "red";
+			}
+
+			if (message.length < 1) {
+				document.getElementById('errorMessage').innerHTML = "Message is required.";
+				document.getElementById('errorMessage').style.color = "red";
+			}
+
+		}
+
+	</script>
 
 </body>
 </html>

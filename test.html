@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="myForm" id="form" onsubmit="return validation();">
+			<h2>Send Message</h2>
+
+			<label><h4>Name</h4></label>
+			<input type="text" name="name" class="form-control"><br><br>
+			<div id="errorName"></div>
+
+
+			<label><h4>Email</h4></label>
+			<input type="email" name="email" class="form-control"><br><br>
+			<p id="errorEmail"></p>
+
+
+			<label><h4>Message Here</h4></label><br>
+			<textarea cols="20" rows="10"  name="message"></textarea>
+			<p id="errorMessage"></p>
+
+			<button name="Submit" id="btn" value="Submit"  >Submit</button>
+		</form>
+	<script>
+		
+		function validation(){
+		
+			var name = document.forms['myForm']['name'].value;
+			var email = document.forms['myForm']['email'].value;
+			var message = document.forms['myForm']['message'].value;
+
+
+			if (name.length < 1) {
+				document.getElementById('errorName').innerHTML = "Name is required.";
+				document.getElementById('errorName').style.color = "red";
+			}
+
+			if (email === '' || email == null) {
+				document.getElementById('errorEmail').innerHTML = "Email is required.";
+				document.getElementById('errorEmail').style.color = "red";
+			}
+
+			if (message === '' || message == null) {
+				document.getElementById('errorMessage').innerHTML = "Message is required.";
+				document.getElementById('errorMessage').style.color = "red";
+			}
+
+		}
+
+	</script>
+</body>
+</html>

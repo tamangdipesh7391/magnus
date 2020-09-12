@@ -296,9 +296,10 @@ header{
 
 /*slider*/
 .main {
-        height: 80vh;
-        width: 80%;
+        height: 65vh;
+        width: 90%;
         margin: auto;
+        margin-top: 25px;
         animation: sliderX 10s infinite;
 
     }
@@ -332,4 +333,70 @@ header{
         }
 
     }
+    @media(max-width: 767px){
+    	.main{
+    		height: 50vh;
+        width: 100%;
+        margin-top: 63px;
+        margin-bottom: 10px;
+    	}
+    }
 /*slider*/
+
+
+/*footer*/
+footer{
+
+	height: 180px;
+	background: #000;
+	width: 100%;
+	display: flex;
+	padding: 12px 18px;
+}
+footer h3{
+	font-size: 22px;
+	margin-bottom: 8px;
+	text-decoration: underline;
+	color: blue;
+}
+.left-footer,.right-footer{
+	width: 50%;
+	
+}
+.left-footer ul{
+	display:block;
+}
+.right-footer ul{
+	display: flex;
+	/*float: right;*/
+}
+.left-footer ul li{
+	list-style-type: none;
+	margin:5px;
+}
+.right-footer ul li{
+	list-style-type: none;
+	margin:5px;
+	
+}
+.right-footer ul li a{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+.left-footer ul li a{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.right-footer img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+
+/*footer*/
