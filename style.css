@@ -2,7 +2,12 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-
+	max-width: 1140px;
+	margin:auto;
+	margin-top: 0px;
+}
+form input{
+	padding: 8px 10px;
 }
 /*header*/
 header span{
@@ -29,7 +34,12 @@ header{
 .left-header h2{
 	font-size: 33px;
 	margin-top: 13px;
-	margin-left: 10px;
+	margin-left: -157px;
+}
+@media(max-width: 768px){
+	.left-header h2{
+		margin-left: -59px;
+	}
 }
 @media(max-width: 767px){
 	.left-header{
@@ -37,10 +47,11 @@ header{
 	/*display: flex;*/
 }
 	.left-header h2{
-	font-size: 20px;
-	margin-top: 18px;
+	font-size: 30px;
+	margin-top: 16px;
 	margin-left: 10px;
 }
+
 }
 .left-header img{
 	width: 64px;
@@ -70,6 +81,7 @@ header{
 	padding: 7px 12px;
 
 }
+
 @media(max-width: 424px){
 	.right-header ul li{
 		padding: 3px 7px;
@@ -165,8 +177,8 @@ header{
 
 }
 .col-md-3 img{
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 250px;
 }
 @media(max-width: 1024px){
 	.col-md-3 img{
@@ -237,7 +249,7 @@ header{
 	margin:15px;
 }
 .profile-pic img{
-	margin-left: 130px;
+	margin-left: 76px;
 }
 .description{
 	/*padding-right: 10px;*/
@@ -392,11 +404,25 @@ footer h3{
 	text-decoration: none;
 }
 
-.right-footer img{
+.img-1{
 	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.img-2{
+	width: 40px;
 	height: 30px;
 	border-radius: 50%;
 }
 
 
 /*footer*/
+
+table{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+table td{
+	text-align: center;
+
+}
